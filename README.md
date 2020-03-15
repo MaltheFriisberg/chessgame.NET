@@ -1,6 +1,6 @@
 # Project Title
 
-A tictactoe AI library for .NET Core. The purpose of this project is to toy with .NET core whilst having some fun :)
+A chess AI library for .NET Core. The purpose of this project is to toy with .NET core whilst having some fun :)
 
 ## Getting Started
 
