@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using AiEngine;
 namespace AiEngine.Tests
 {
     [TestClass]
@@ -8,6 +8,7 @@ namespace AiEngine.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            Class1 class1 = new Class1();
         }
     }
 }
