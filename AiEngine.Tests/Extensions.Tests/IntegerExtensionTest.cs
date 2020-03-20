@@ -1,5 +1,6 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using AiEngine.Extensions;
 namespace AiEngine.Tests.Extensions.Tests
 {
     [TestClass]
@@ -7,6 +8,8 @@ namespace AiEngine.Tests.Extensions.Tests
     {
         [TestMethod]
         public void TestIntegerExtension() {
+            UInt64 test = 0;
+            test.PrintBoard();
             Assert.IsFalse(true);
         }
         
