@@ -9,7 +9,7 @@ namespace AiEngine.Extensions {
         /// </summary>
         /// <param name="board"></param>
         public static void PrintBoard(this UInt64 board) {
-            var bits = board.ToBitArray();
+            Console.WriteLine(board.UInt64ToString());
         }
         public static BitArray ToBitArray(this UInt64 integer){            
             byte[] bytes = BitConverter.GetBytes(integer);
