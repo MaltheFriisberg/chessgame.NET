@@ -1,3 +1,4 @@
+using System.Collections;
 using System;
 namespace AiEngine.Logic
 {
@@ -7,7 +8,7 @@ namespace AiEngine.Logic
         public UInt64 setBitTo1(UInt64 integer, int position) {
             // Set a bit at position to 1.
             throw new NotImplementedException();
-        }
+        }               
         
     }
 }
