@@ -28,5 +28,23 @@ namespace AiEngine
         public static int[] WhiteKnights = new int[]{57,62};
         public static int[] WhitePawns = new int[]{48,49,50,51,52,53,54,55};
 
+        //Computed integer values for initial bitboard states
+        //Black
+        public static UInt64 BlackKingBoard = 8;
+        public static UInt64 BlackQueenBoard = 16;
+        public static UInt64 BlackRooksBoard = 129;
+        public static UInt64 BlackBishopsBoard = 36;
+        public static UInt64 BlackKnightsBoard = 66;
+        public static UInt64 BlackPawnsBoard = 65280;
+        //White
+        public static UInt64 WhiteKingBoard = 576460752303423488;
+        public static UInt64 WhiteQueenBoard = 1152921504606846976;
+        public static UInt64 WhiteRooksBoard = 9295429630892703744;
+        public static UInt64 WhiteBishopsBoard = 2594073385365405696;
+        public static UInt64 WhiteKnightsBoard = 4755801206503243776;
+        public static UInt64 WhitePawnsBoard = 71776119061217280;
+
+
+
     }
 }

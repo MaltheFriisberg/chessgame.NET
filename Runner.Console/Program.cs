@@ -1,13 +1,30 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using AiEngine;
 using AiEngine.Extensions;
-    class Program
+using System.Collections;
+
+class Program
     {
         static void Main(string[] args)
         {
            UInt64 foo = 0;
-           foo.PrintBoard(); 
-           Console.WriteLine("HelloWOrld");
+           var bitArray = foo.ToBitArray();
+
+           //foreach(int pos in BoardConstants.BlackRooks)
+            bitArray[BoardConstants.BlackKing] = true;
+
+           UInt64 result = BitConverter.ToUInt64(ConvertToByte(bitArray));
+           //foo.ToBitArray()[BoardConstants.WhiteKing] = true;
+           //foo |= 1 << BoardConstants.WhiteKing;
+           result.PrintBoard(); 
+           Console.WriteLine(result);
         }
+        static byte[] ConvertToByte(BitArray bits) {
+    // Make sure we have enough space allocated even when number of bits is not a multiple of 8
+    var bytes = new byte[(bits.Length - 1) / 8 + 1];
+    bits.CopyTo(bytes, 0);
+    return bytes;
+}
     }
 
