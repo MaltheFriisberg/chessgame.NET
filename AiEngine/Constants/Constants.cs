@@ -13,12 +13,14 @@ namespace AiEngine
     /// </summary>
     public static class BoardConstants
     {
+        //Black - positioned Top
         public static int BlackKing = 3;
         public static int BlackQueen = 4;
         public static int[] BlackRooks = new int[]{0,7}; //Tower
         public static int[] BlackBishops = new int[]{2,5};
         public static int[] BlackKnights = new int[]{1,6};
         public static int[] BlackPawns = new int[]{8,9,10,11,12,13,14,15};
+        //White - positioned Bottom
         public static int WhiteKing = 59;
         public static int WhiteQueen = 60;
         public static int[] WhiteRooks = new int[]{56,63}; //Tower
