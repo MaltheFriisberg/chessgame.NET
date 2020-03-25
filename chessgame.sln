@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiEngine.Tests", "AiEngine.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner.Console", "Runner.Console\Runner.Console.csproj", "{914BA3DC-73CD-4F6F-B4C2-9F8CCD978AD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "website", "website\website.csproj", "{CB43F43B-9E35-4630-AC9F-3A655990FC26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{914BA3DC-73CD-4F6F-B4C2-9F8CCD978AD9}.Release|x64.Build.0 = Release|Any CPU
 		{914BA3DC-73CD-4F6F-B4C2-9F8CCD978AD9}.Release|x86.ActiveCfg = Release|Any CPU
 		{914BA3DC-73CD-4F6F-B4C2-9F8CCD978AD9}.Release|x86.Build.0 = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|x64.Build.0 = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Debug|x86.Build.0 = Debug|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|x64.ActiveCfg = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|x64.Build.0 = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|x86.ActiveCfg = Release|Any CPU
+		{CB43F43B-9E35-4630-AC9F-3A655990FC26}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

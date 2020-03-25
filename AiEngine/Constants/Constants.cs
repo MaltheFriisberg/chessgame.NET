@@ -1,4 +1,7 @@
 using System;
+using System.Collections;
+using AiEngine.Extensions;
+
 namespace AiEngine
 {
     /// <summary>
@@ -42,9 +45,7 @@ namespace AiEngine
         public static UInt64 WhiteRooksBoard = 9295429630892703744;
         public static UInt64 WhiteBishopsBoard = 2594073385365405696;
         public static UInt64 WhiteKnightsBoard = 4755801206503243776;
-        public static UInt64 WhitePawnsBoard = 71776119061217280;
-
-
-
+        public static UInt64 WhitePawnsBoard =  71776119061217280;
+        
     }
 }

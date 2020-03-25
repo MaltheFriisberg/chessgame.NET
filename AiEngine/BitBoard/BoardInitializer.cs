@@ -3,6 +3,7 @@ using System;
 using AiEngine.Enums;
 using AiEngine.Interfaces;
 using AiEngine.Extensions;
+using System.Collections;
 
 namespace AiEngine.BitBoard
 {
@@ -25,14 +26,20 @@ namespace AiEngine.BitBoard
         {
             return InitBoard(player, piece);
         }
-        private UInt64 InitBoard(Player player, Piece piece) {
+        private static UInt64 InitBoard(Player player, Piece piece) {
             UInt64 result = 0;
+            var bitArray = result.ToBitArray();
             if(player==0 && piece==0) { //black king
-              var bitArray = result.ToBitArray();
-              //bitArray[BoardConstants.BlackKing]
+              bitArray[BoardConstants.BlackKing] = true;
             }
              
-            return result;
+            return BitConverter.ToUInt64(ConvertToByte(bitArray),0);
+        }
+        private static byte[] ConvertToByte(BitArray bits) {
+            // Make sure we have enough space allocated even when number of bits is not a multiple of 8
+            var bytes = new byte[(bits.Length - 1) / 8 + 1];
+            bits.CopyTo(bytes, 0);
+            return bytes;
         }
     }
 }
